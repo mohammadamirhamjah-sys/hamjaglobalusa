@@ -5,7 +5,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#f4f7fb;
 color:#333;
 line-height:1.7;
@@ -17,6 +17,9 @@ max-width:1200px;
 margin:auto;
 }
 
+
+/* HEADER */
+
 .header{
 background:#0b3d91;
 color:#fff;
@@ -26,20 +29,39 @@ top:0;
 z-index:1000;
 }
 
+
+/* LOGO */
+
+.logo{
+display:block;
+width:120px;
+height:auto;
+margin:0 auto 15px;
+border-radius:10px;
+}
+
+
+
 .header h1{
 text-align:center;
 font-size:36px;
 }
+
 
 .header p{
 text-align:center;
 margin-top:8px;
 }
 
+
+
+/* NAVIGATION */
+
 nav{
 margin-top:20px;
 text-align:center;
 }
+
 
 nav a{
 color:#fff;
@@ -49,30 +71,45 @@ font-weight:bold;
 transition:.3s;
 }
 
+
 nav a:hover{
 color:#ffd54f;
 }
 
+
+
+/* HERO SECTION */
+
 .hero{
-background:linear-gradient(rgba(11,61,145,.8),rgba(11,61,145,.8)),
+background:
+linear-gradient(rgba(11,61,145,.75),rgba(11,61,145,.75)),
 url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1600&q=80");
+
 background-size:cover;
 background-position:center;
+
 color:#fff;
+
 padding:120px 20px;
 text-align:center;
 }
+
 
 .hero h2{
 font-size:48px;
 margin-bottom:20px;
 }
 
+
 .hero p{
 max-width:800px;
 margin:auto;
 font-size:20px;
 }
+
+
+
+/* BUTTON */
 
 .btn{
 display:inline-block;
@@ -86,13 +123,19 @@ font-weight:bold;
 transition:.3s;
 }
 
+
 .btn:hover{
 background:#e68900;
 }
 
+
+
+/* SECTIONS */
+
 section{
 padding:70px 0;
 }
+
 
 section h2{
 text-align:center;
@@ -101,58 +144,130 @@ margin-bottom:30px;
 font-size:34px;
 }
 
+
+
+/* SERVICES */
+
 .grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
 gap:25px;
+
 }
+
+
 
 .card{
+
 background:#fff;
+
 padding:25px;
+
 border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
 transition:.3s;
+
 }
+
+
 
 .card:hover{
+
 transform:translateY(-8px);
+
 }
+
+
 
 .card h3{
+
 color:#0b3d91;
+
 margin-bottom:12px;
+
 }
+
+
+
+/* CONTACT */
 
 #contact{
+
 background:#eef3ff;
+
 }
 
+
+
+/* FOOTER */
+
 footer{
+
 background:#0b3d91;
+
 color:#fff;
+
 text-align:center;
+
 padding:25px;
+
 margin-top:50px;
+
 }
+
+
+
+/* MOBILE */
 
 @media(max-width:768px){
 
+
 .hero h2{
+
 font-size:34px;
+
 }
+
+
 
 .hero p{
+
 font-size:17px;
+
 }
+
+
 
 nav a{
+
 display:block;
+
 margin:10px 0;
+
 }
 
+
+
 .header h1{
+
 font-size:28px;
+
 }
+
+
+
+.logo{
+
+width:100px;
+
+}
+
 
 }
