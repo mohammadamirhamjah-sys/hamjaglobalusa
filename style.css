@@ -1,5 +1,5 @@
 /* ====================================
-   HAMJA GLOBAL LLC - Version 2.2
+   HAMJA GLOBAL LLC - B2B Standard v3.0
 ==================================== */
 
 * {
@@ -25,7 +25,23 @@ body {
     margin: auto;
 }
 
-/* HEADER & NAVIGATION */
+/* 5. ANNOUNCEMENT BAR */
+.announcement-bar {
+    background: #082860;
+    color: #ffd54f;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.announcement-bar a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+/* HEADER & NAV */
 .header {
     background: #0b3d91;
     color: #ffffff;
@@ -39,18 +55,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .logo-area {
     display: flex;
     align-items: center;
     gap: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
     border-radius: 50%;
     background: #ffffff;
@@ -58,27 +76,26 @@ body {
 }
 
 .header h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0;
 }
 
 .header p {
-    font-size: 13px;
+    font-size: 12px;
     color: #d1e0ff;
-    margin-top: 2px;
 }
 
 nav {
     display: flex;
-    gap: 18px;
+    gap: 16px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
-    transition: color 0.3s ease;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -87,7 +104,7 @@ nav a:hover {
 
 /* HERO SECTION */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("office.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("office.jpg");
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -96,7 +113,7 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: 44px;
+    font-size: 42px;
     margin-bottom: 20px;
     line-height: 1.25;
 }
@@ -104,155 +121,174 @@ nav a:hover {
 .hero p {
     max-width: 850px;
     margin: auto;
-    font-size: 19px;
+    font-size: 18px;
 }
 
-/* BUTTON */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BUTTONS */
 .btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 14px 35px;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
     background: #ff9800;
     color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.20);
-    transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn-primary:hover {
     background: #e68900;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0,0,0,.25);
 }
 
-/* SECTIONS & TITLES */
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #0b3d91;
+}
+
+/* SECTIONS */
 section {
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 35px;
     color: #0b3d91;
 }
 
-/* GRID LAYOUT & CARDS */
+/* GRID & CARDS */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    gap: 25px;
 }
 
 .card {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
     border-top: 5px solid #0b3d91;
-    /* Opacity and Transform are handled dynamically by script.js */
-}
-
-.card:hover {
-    transform: translateY(-10px) !important;
-    box-shadow: 0 18px 40px rgba(0,0,0,.18);
 }
 
 .card h3 {
     color: #0b3d91;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* 9. TRUST SECTION STYLES */
+.trust-icon {
+    font-size: 35px;
+    color: #ff9800;
     margin-bottom: 15px;
-    font-size: 22px;
 }
 
-.card p {
-    color: #555555;
-    font-size: 16px;
+.text-center {
+    text-align: center;
 }
 
-/* MEDIA & PHOTOS */
+/* PHOTOS */
 .photo {
     display: block;
     width: 100%;
     max-width: 700px;
-    margin: 30px auto;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0,0,0,.20);
-    transition: transform 0.4s ease;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
-.photo:hover {
-    transform: scale(1.03);
-}
-
-/* SECTION BACKGROUNDS */
-#about, #vision, #services, #categories, #process, #faq {
-    background: #ffffff;
-}
-
-#about p, #mission p, #vision p {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-    font-size: 18px;
-}
-
-#mission, #values, #industries, #why-us, #founder, #contact {
-    background: #eef4ff;
-}
-
-#process .card {
-    text-align: center;
-}
-
-#process h3 {
-    font-size: 38px;
-    color: #ff9800;
-    margin-bottom: 12px;
-}
-
-#founder {
-    text-align: center;
-}
-
-#founder .photo {
-    width: 150px;
-    height: 150px;
+.founder-photo {
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-#founder h3 {
-    margin-top: 20px;
-    font-size: 28px;
+/* SECTION BACKGROUNDS */
+#about, #values, #services, #categories, #faq {
+    background: #ffffff;
+}
+
+#mission, #industries, #trust, #founder, #contact {
+    background: #eef4ff;
+}
+
+/* 3. B2B CONTACT FORM STYLES */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact-info h3, .contact-form h3 {
     color: #0b3d91;
-}
-
-#founder h4 {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: #666666;
-    font-weight: normal;
-}
-
-#founder p {
-    max-width: 850px;
-    margin: auto;
-}
-
-#faq .card {
     margin-bottom: 20px;
 }
 
-#contact {
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* 4. FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50px;
     text-align: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-#contact p {
-    font-size: 18px;
-    margin: 10px 0;
+.whatsapp-float:hover {
+    background-color: #128c7e;
 }
 
 /* FOOTER */
@@ -263,14 +299,39 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 8px 0;
-    font-size: 15px;
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #d1e0ff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    color: #ffd54f;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd54f;
 }
 
 footer hr {
-    margin: 25px auto;
-    width: 120px;
+    margin: 20px auto;
+    width: 100px;
     border: 0;
     height: 1px;
     background: rgba(255,255,255,.3);
@@ -281,41 +342,19 @@ footer hr {
     .header .container {
         flex-direction: column;
         gap: 15px;
-        text-align: center;
-    }
-
-    .logo-area {
-        flex-direction: column;
-        gap: 8px;
     }
 
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
     }
 
-    .hero {
-        padding: 80px 20px;
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     .hero h2 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    section {
-        padding: 50px 0;
-    }
-
-    section h2 {
         font-size: 28px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
     }
 }
