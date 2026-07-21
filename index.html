@@ -8,42 +8,60 @@
     <meta name="description" content="HAMJA GLOBAL LLC is a U.S. registered wholesale trading company specializing in wholesale distribution, Amazon FBA sourcing, import & export, and global B2B solutions.">
     <meta name="keywords" content="Wholesale, Amazon FBA, Import Export, B2B, Distributor, Supplier, Wyoming LLC">
     <meta name="author" content="HAMJA GLOBAL LLC">
+    
+    <!-- FontAwesome for Icons & Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- 5. ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <p><i class="fa-solid fa-bullhorn"></i> Open for New Wholesale Partnerships | <a href="#contact">Request Your Quote Today</a></p>
+</div>
+
+<!-- HEADER & NAVIGATION -->
 <header class="header">
     <div class="container">
-        <div class="logo-area">
+        <a href="#home" class="logo-area">
             <img src="logo.png" class="logo" alt="HAMJA GLOBAL LLC Logo">
             <div>
                 <h1>HAMJA GLOBAL LLC</h1>
                 <p>Your Trusted Global Wholesale Partner</p>
             </div>
-        </div>
+        </a>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#industries">Industries</a>
+            <a href="#trust">Verification</a>
             <a href="#founder">Founder</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
 </header>
 
+<!-- HERO SECTION -->
 <section id="home" class="hero">
     <div class="container">
         <h2>Building Trusted Wholesale Partnerships Across Global Markets</h2>
         <p>HAMJA GLOBAL LLC is a U.S. registered wholesale trading company focused on professional sourcing, wholesale distribution, Amazon FBA support, and international B2B trade.</p>
-        <a href="#contact" class="btn">Request a Quote</a>
+        
+        <!-- 7. HERO BUTTONS -->
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Request a Quote</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
     </div>
 </section>
 
+<!-- ABOUT SECTION -->
 <section id="about">
     <div class="container">
         <h2>About Us</h2>
+        <!-- 1. FIXED IMAGE PATH (Ensure your actual image filename matches here) -->
         <img src="office.jpg" class="photo" alt="HAMJA GLOBAL LLC Office">
         <p>
             HAMJA GLOBAL LLC was established to connect trusted suppliers with businesses through professional wholesale sourcing and international trade solutions.
@@ -53,20 +71,24 @@
     </div>
 </section>
 
+<!-- MISSION & VISION -->
 <section id="mission">
     <div class="container">
-        <h2>Mission</h2>
-        <p>To deliver reliable wholesale products through verified sourcing, competitive pricing, and long-term business partnerships.</p>
+        <h2>Mission & Vision</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                <p>To deliver reliable wholesale products through verified sourcing, competitive pricing, and long-term business partnerships.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                <p>To become a trusted global wholesale trading partner connecting suppliers, distributors, and international B2B buyers through integrity, transparency, and operational excellence.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="vision">
-    <div class="container">
-        <h2>Vision</h2>
-        <p>To become a trusted global wholesale trading partner connecting suppliers, distributors, and international B2B buyers through integrity, transparency, and operational excellence.</p>
-    </div>
-</section>
-
+<!-- CORE VALUES -->
 <section id="values">
     <div class="container">
         <h2>Core Values</h2>
@@ -95,6 +117,7 @@
     </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
     <div class="container">
         <h2>Our Services</h2>
@@ -127,38 +150,22 @@
     </div>
 </section>
 
+<!-- INDUSTRIES -->
 <section id="industries">
     <div class="container">
         <h2>Industries We Serve</h2>
         <div class="grid">
-            <div class="card">
-                <h3>Retail Stores</h3>
-                <p>Reliable wholesale products for retail businesses.</p>
-            </div>
-            <div class="card">
-                <h3>Amazon Sellers</h3>
-                <p>Supporting Amazon FBA sellers with professional sourcing solutions.</p>
-            </div>
-            <div class="card">
-                <h3>Distributors</h3>
-                <p>Bulk purchasing opportunities for regional distributors.</p>
-            </div>
-            <div class="card">
-                <h3>Hotels</h3>
-                <p>Commercial hospitality supply solutions.</p>
-            </div>
-            <div class="card">
-                <h3>Restaurants</h3>
-                <p>Reliable wholesale products for restaurants and food service businesses.</p>
-            </div>
-            <div class="card">
-                <h3>E-commerce Businesses</h3>
-                <p>Supporting online businesses through trusted wholesale sourcing.</p>
-            </div>
+            <div class="card"><h3>Retail Stores</h3><p>Reliable wholesale products for retail businesses.</p></div>
+            <div class="card"><h3>Amazon Sellers</h3><p>Supporting Amazon FBA sellers with professional sourcing solutions.</p></div>
+            <div class="card"><h3>Distributors</h3><p>Bulk purchasing opportunities for regional distributors.</p></div>
+            <div class="card"><h3>Hotels</h3><p>Commercial hospitality supply solutions.</p></div>
+            <div class="card"><h3>Restaurants</h3><p>Reliable wholesale products for restaurants and food service businesses.</p></div>
+            <div class="card"><h3>E-commerce Businesses</h3><p>Supporting online businesses through trusted wholesale sourcing.</p></div>
         </div>
     </div>
 </section>
 
+<!-- PRODUCT CATEGORIES -->
 <section id="categories">
     <div class="container">
         <h2>Product Categories</h2>
@@ -173,70 +180,35 @@
     </div>
 </section>
 
-<section id="why-us">
+<!-- 9. BUSINESS VERIFICATION / TRUST SECTION -->
+<section id="trust">
     <div class="container">
-        <h2>Why Choose HAMJA GLOBAL LLC</h2>
+        <h2>Business Verification & Compliance</h2>
         <div class="grid">
-            <div class="card">
-                <h3>U.S. Registered Company</h3>
-                <p>Operating as a registered Limited Liability Company in Wyoming, USA.</p>
+            <div class="card text-center">
+                <i class="fa-solid fa-shield-halved trust-icon"></i>
+                <h3>U.S. Registered Entity</h3>
+                <p>Officially registered Limited Liability Company (LLC) in Wyoming, USA.</p>
             </div>
-            <div class="card">
-                <h3>Transparent Business</h3>
-                <p>Professional communication and ethical business practices.</p>
+            <div class="card text-center">
+                <i class="fa-solid fa-file-contract trust-icon"></i>
+                <h3>Verification Documents</h3>
+                <p>Certificate of Good Standing & W-9 documents available upon request for verified suppliers.</p>
             </div>
-            <div class="card">
-                <h3>Reliable Sourcing</h3>
-                <p>Committed to sourcing products from trusted suppliers.</p>
-            </div>
-            <div class="card">
-                <h3>Global Market Focus</h3>
-                <p>Serving businesses across USA, Saudi Arabia, UAE, and international markets.</p>
-            </div>
-            <div class="card">
-                <h3>Professional Support</h3>
-                <p>Dedicated customer support for wholesale inquiries.</p>
-            </div>
-            <div class="card">
-                <h3>Long-Term Partnership</h3>
-                <p>Focused on sustainable business relationships rather than one-time transactions.</p>
+            <div class="card text-center">
+                <i class="fa-solid fa-clock trust-icon"></i>
+                <h3>24-Hour Inquiry Response</h3>
+                <p>Dedicated B2B trade desk ensuring prompt inquiry and RFQ response within 24 hours.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="process">
-    <div class="container">
-        <h2>Our Process</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>01</h3>
-                <p>Business Inquiry</p>
-            </div>
-            <div class="card">
-                <h3>02</h3>
-                <p>Requirement Review</p>
-            </div>
-            <div class="card">
-                <h3>03</h3>
-                <p>Product Sourcing</p>
-            </div>
-            <div class="card">
-                <h3>04</h3>
-                <p>Quotation & Confirmation</p>
-            </div>
-            <div class="card">
-                <h3>05</h3>
-                <p>Order Fulfillment & Support</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+<!-- 6. FOUNDER SECTION -->
 <section id="founder">
     <div class="container">
-        <h2>Founder</h2>
-        <img src="profile.jpg" alt="Founder - Amir Hamja" class="photo">
+        <h2>Meet Our Founder</h2>
+        <img src="profile.jpg" alt="Founder - Amir Hamja" class="photo founder-photo">
         <h3>Amir Hamja</h3>
         <h4>Founder &amp; Managing Member</h4>
         <p>
@@ -246,6 +218,7 @@
     </div>
 </section>
 
+<!-- FAQ SECTION -->
 <section id="faq">
     <div class="container">
         <h2>Frequently Asked Questions</h2>
@@ -268,26 +241,65 @@
     </div>
 </section>
 
+<!-- 3. CONTACT SECTION WITH FORM & EMAIL UPDATE -->
 <section id="contact">
     <div class="container">
         <h2>Contact Us</h2>
-        <p><strong>Company:</strong> HAMJA GLOBAL LLC</p>
-        <p><strong>Location:</strong> Wyoming, USA</p>
-        <p><strong>Email:</strong> mohammadamirhamjah@gmail.com</p>
-        <p><strong>Website:</strong> https://hamjaglobalusa.com</p>
-        <p><strong>Business Hours:</strong> Monday – Friday (9:00 AM – 6:00 PM EST)</p>
-        <br>
-        <a href="mailto:mohammadamirhamjah@gmail.com" class="btn">Send Email</a>
+        <div class="contact-wrapper">
+            
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p><strong>Company:</strong> HAMJA GLOBAL LLC</p>
+                <p><strong>Location:</strong> Wyoming, USA</p>
+                <!-- 2. BUSINESS EMAIL -->
+                <p><strong>Email:</strong> info@hamjaglobalusa.com</p>
+                <p><strong>Alt Email:</strong> mohammadamirhamjah@gmail.com</p>
+                <p><strong>Website:</strong> https://hamjaglobalusa.com</p>
+                <p><strong>Business Hours:</strong> Mon – Fri (9:00 AM – 6:00 PM EST)</p>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+                <h3>Send B2B Inquiry</h3>
+                <input type="text" name="name" placeholder="Your Name *" required>
+                <input type="text" name="company" placeholder="Company Name *" required>
+                <input type="email" name="email" placeholder="Business Email *" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="country" placeholder="Country *" required>
+                <textarea name="message" rows="4" placeholder="How can we help you? (Product/Quantity requirement) *" required></textarea>
+                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+            </form>
+
+        </div>
     </div>
 </section>
 
+<!-- 4. FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/10000000000" class="whatsapp-float" target="_blank" title="Need Wholesale Pricing? Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- FOOTER -->
 <footer>
     <div class="container">
-        <p>HAMJA GLOBAL LLC</p>
-        <p>Your Trusted Global Wholesale Partner</p>
-        <p>Wyoming, USA</p>
-        <p>Email: mohammadamirhamjah@gmail.com</p>
-        <p>Website: https://hamjaglobalusa.com</p>
+        <p><strong>HAMJA GLOBAL LLC</strong></p>
+        <p>Your Trusted Global Wholesale Partner | Wyoming, USA</p>
+        <p>Email: info@hamjaglobalusa.com</p>
+
+        <!-- 8. FOOTER POLICY LINKS -->
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a> | 
+            <a href="shipping-policy.html">Shipping Policy</a> | 
+            <a href="refund-policy.html">Refund Policy</a>
+        </div>
+
+        <!-- 10. SOCIAL MEDIA LINKS -->
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
         <hr>
         <p>© 2026 HAMJA GLOBAL LLC. All Rights Reserved.</p>
     </div>
