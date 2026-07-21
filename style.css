@@ -1,240 +1,742 @@
+/* ====================================
+   HAMJA GLOBAL LLC
+   Version 2.0
+==================================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
+
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f7fb;
     color:#333;
-    line-height:1.7;
+    line-height:1.8;
+
 }
 
 .container{
+
     width:90%;
     max-width:1200px;
     margin:auto;
+
 }
 
-
-/* HEADER */
+/* ===========================
+HEADER
+=========================== */
 
 .header{
+
     background:#0b3d91;
     color:#fff;
-    padding:20px 0;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
 }
 
+.logo-area{
 
-/* LOGO */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:20px 0;
+
+}
 
 .logo{
-    display:block;
-    width:120px;
-    height:auto;
-    margin:0 auto 15px;
-    border-radius:10px;
-}
 
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50%;
+    background:#fff;
+    padding:8px;
+
+}
 
 .header h1{
-    text-align:center;
-    font-size:36px;
-}
 
+    font-size:36px;
+
+}
 
 .header p{
-    text-align:center;
+
     margin-top:8px;
+
 }
 
-
-/* NAVIGATION */
+/* ===========================
+NAVIGATION
+=========================== */
 
 nav{
-    margin-top:20px;
-    text-align:center;
-}
 
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding-bottom:20px;
+
+}
 
 nav a{
-    color:#fff;
+
+    color:white;
     text-decoration:none;
-    margin:0 18px;
     font-weight:bold;
     transition:.3s;
-}
 
+}
 
 nav a:hover{
+
     color:#ffd54f;
+
 }
 
-
-/* HERO */
+/* ===========================
+HERO
+=========================== */
 
 .hero{
+
     background:
+
     linear-gradient(
-    rgba(11,61,145,.75),
-    rgba(11,61,145,.75)
+
+    rgba(0,0,0,.60),
+
+    rgba(0,0,0,.60)
+
     ),
-    url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1600&q=80");
+
+    url("office.jpg");
 
     background-size:cover;
     background-position:center;
-
-    color:#fff;
-    padding:120px 20px;
+    color:white;
     text-align:center;
-}
+    padding:140px 20px;
 
+}
 
 .hero h2{
-    font-size:48px;
-    margin-bottom:20px;
-}
 
+    font-size:52px;
+    margin-bottom:25px;
+
+}
 
 .hero p{
-    max-width:800px;
+
+    max-width:850px;
     margin:auto;
     font-size:20px;
+
 }
 
-
-/* BUTTON */
+/* ===========================
+BUTTON
+=========================== */
 
 .btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 35px;
-    background:#ff9800;
-    color:#fff;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
-}
 
+display:inline-block;
+
+margin-top:35px;
+
+padding:15px 40px;
+
+background:#ff9800;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
 
 .btn:hover{
-    background:#e68900;
+
+background:#e68900;
+
+transform:translateY(-3px);
+
 }
 
-
-/* SECTION */
+/* ===========================
+SECTION
+=========================== */
 
 section{
-    padding:70px 0;
-}
 
+padding:80px 0;
+
+}
 
 section h2{
-    text-align:center;
-    color:#0b3d91;
-    margin-bottom:30px;
-    font-size:34px;
+
+text-align:center;
+
+font-size:38px;
+
+margin-bottom:35px;
+
+color:#0b3d91;
+
 }
 
-
-/* PHOTO */
+/* ===========================
+PHOTO
+=========================== */
 
 .photo{
-    width:100%;
-    max-width:500px;
-    height:auto;
-    display:block;
-    margin:25px auto;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
 
+display:block;
 
-/* SERVICES */
+width:100%;
+
+max-width:700px;
+
+margin:30px auto;
+
+border-radius:15px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.20);}
+/* ===========================
+GRID LAYOUT
+=========================== */
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    gap:30px;
+    margin-top:30px;
 }
 
+/* ===========================
+CARD DESIGN
+=========================== */
 
 .card{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
 
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid #0b3d91;
+
+}
 
 .card:hover{
-    transform:translateY(-8px);
-}
 
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
 
 .card h3{
+
     color:#0b3d91;
-    margin-bottom:12px;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
 }
 
+.card p{
 
-/* CONTACT */
+    color:#555;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+#about{
+
+background:white;
+
+}
+
+#about p{
+
+max-width:950px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+/* ===========================
+MISSION
+=========================== */
+
+#mission{
+
+background:#eef4ff;
+
+}
+
+#mission p{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+/* ===========================
+VISION
+=========================== */
+
+#vision{
+
+background:white;
+
+}
+
+#vision p{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+/* ===========================
+CORE VALUES
+=========================== */
+
+#values{
+
+background:#eef4ff;
+
+}
+
+/* ===========================
+SERVICES
+=========================== */
+
+#services{
+
+background:white;
+
+}
+
+/* ===========================
+INDUSTRIES
+=========================== */
+
+#industries{
+
+background:#eef4ff;
+
+}
+
+/* ===========================
+PRODUCT CATEGORIES
+=========================== */
+
+#categories{
+
+background:white;
+
+}
+
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
+#why-us{
+
+background:#eef4ff;
+
+}
+
+/* ===========================
+PROCESS
+=========================== */
+
+#process{
+
+background:white;
+
+}
+
+#process .card{
+
+text-align:center;
+
+}
+
+#process h3{
+
+font-size:40px;
+
+color:#ff9800;
+
+margin-bottom:15px;
+
+}
+
+/* ===========================
+FOUNDER
+=========================== */
+
+#founder{
+
+background:#eef4ff;
+
+text-align:center;
+
+}
+
+#founder h3{
+
+margin-top:20px;
+
+font-size:30px;
+
+color:#0b3d91;
+
+}
+
+#founder h4{
+
+margin-top:10px;
+
+margin-bottom:20px;
+
+color:#777;
+
+font-weight:normal;
+
+}
+
+#founder p{
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+/* ===========================
+FAQ
+=========================== */
+
+#faq{
+
+background:white;
+
+}
+
+#faq .card{
+
+margin-bottom:20px;}
+/* ===================================
+CONTACT SECTION
+=================================== */
 
 #contact{
-    background:#eef3ff;
+
+background:#eef4ff;
+
+text-align:center;
+
 }
 
+#contact p{
 
-/* FOOTER */
+font-size:18px;
+
+margin:12px 0;
+
+}
+
+#contact .btn{
+
+margin-top:25px;
+
+}
+
+/* ===================================
+FOOTER
+=================================== */
 
 footer{
-    background:#0b3d91;
-    color:#fff;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
+
+background:#0b3d91;
+
+color:#fff;
+
+padding:40px 20px;
+
+text-align:center;
+
 }
 
+footer p{
 
+margin:10px 0;
 
-/* MOBILE RESPONSIVE */
+font-size:16px;
+
+}
+
+footer hr{
+
+margin:25px auto;
+
+width:120px;
+
+border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ===================================
+IMAGE EFFECT
+=================================== */
+
+.photo{
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.photo:hover{
+
+transform:scale(1.03);
+
+}
+
+/* ===================================
+BUTTON EFFECT
+=================================== */
+
+.btn{
+
+box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+.btn:hover{
+
+box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+/* ===================================
+SCROLL ANIMATION
+=================================== */
+
+.card{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===================================
+MOBILE RESPONSIVE
+=================================== */
 
 @media(max-width:768px){
 
-    .hero h2{
-        font-size:34px;
-    }
+.header{
 
-
-    .hero p{
-        font-size:17px;
-    }
-
-
-    nav a{
-        display:block;
-        margin:10px 0;
-    }
-
-
-    .header h1{
-        font-size:28px;
-    }
-
-
-    .logo{
-        width:100px;
-    }
-
-
-    .photo{
-        max-width:90%;
-    }
+position:relative;
 
 }
+
+.logo-area{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:70px;
+
+height:70px;
+
+}
+
+.header h1{
+
+font-size:28px;
+
+}
+
+.header p{
+
+font-size:15px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:10px;
+
+padding-bottom:20px;
+
+}
+
+nav a{
+
+display:block;
+
+padding:10px;
+
+}
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+.hero h2{
+
+font-size:32px;
+
+line-height:1.3;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+section{
+
+padding:60px 20px;
+
+}
+
+section h2{
+
+font-size:30px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:22px;
+
+}
+
+.photo{
+
+width:100%;
+
+}
+
+.btn{
+
+padding:14px 28px;
+
+font-size:16px;
+
+}
+
+#contact p{
+
+font-size:16px;
+
+}
+
+footer{
+
+padding:30px 15px;
+
+}
+
+footer p{
+
+font-size:14px;
+
+}
+
+}
+
+/* ===================================
+END
+HAMJA GLOBAL LLC
+Version 2.0
+=================================== */
