@@ -1,742 +1,321 @@
 /* ====================================
-   HAMJA GLOBAL LLC
-   Version 2.0
+   HAMJA GLOBAL LLC - Version 2.2
 ==================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fb;
-    color:#333;
-    line-height:1.8;
-
-}
-
-.container{
-
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-
-}
-
-/* ===========================
-HEADER
-=========================== */
-
-.header{
-
-    background:#0b3d91;
-    color:#fff;
-    position:sticky;
-    top:0;
-    z-index:999;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-}
-
-.logo-area{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
-    padding:20px 0;
-
-}
-
-.logo{
-
-    width:90px;
-    height:90px;
-    object-fit:contain;
-    border-radius:50%;
-    background:#fff;
-    padding:8px;
-
-}
-
-.header h1{
-
-    font-size:36px;
-
-}
-
-.header p{
-
-    margin-top:8px;
-
-}
-
-/* ===========================
-NAVIGATION
-=========================== */
-
-nav{
-
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-    padding-bottom:20px;
-
-}
-
-nav a{
-
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:#ffd54f;
-
-}
-
-/* ===========================
-HERO
-=========================== */
-
-.hero{
-
-    background:
-
-    linear-gradient(
-
-    rgba(0,0,0,.60),
-
-    rgba(0,0,0,.60)
-
-    ),
-
-    url("office.jpg");
-
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:140px 20px;
-
-}
-
-.hero h2{
-
-    font-size:52px;
-    margin-bottom:25px;
-
-}
-
-.hero p{
-
-    max-width:850px;
-    margin:auto;
-    font-size:20px;
-
-}
-
-/* ===========================
-BUTTON
-=========================== */
-
-.btn{
-
-display:inline-block;
-
-margin-top:35px;
-
-padding:15px 40px;
-
-background:#ff9800;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-border-radius:8px;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#e68900;
-
-transform:translateY(-3px);
-
-}
-
-/* ===========================
-SECTION
-=========================== */
-
-section{
-
-padding:80px 0;
-
-}
-
-section h2{
-
-text-align:center;
-
-font-size:38px;
-
-margin-bottom:35px;
-
-color:#0b3d91;
-
-}
-
-/* ===========================
-PHOTO
-=========================== */
-
-.photo{
-
-display:block;
-
-width:100%;
-
-max-width:700px;
-
-margin:30px auto;
-
-border-radius:15px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.20);}
-/* ===========================
-GRID LAYOUT
-=========================== */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    margin-top:30px;
-}
-
-/* ===========================
-CARD DESIGN
-=========================== */
-
-.card{
-
-    background:#ffffff;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-    border-top:5px solid #0b3d91;
-
-}
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.18);
-
-}
-
-.card h3{
-
-    color:#0b3d91;
-
-    margin-bottom:15px;
-
-    font-size:24px;
-
-}
-
-.card p{
-
-    color:#555;
-
-    font-size:16px;
-
-}
-
-/* ===========================
-ABOUT
-=========================== */
-
-#about{
-
-background:white;
-
-}
-
-#about p{
-
-max-width:950px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:18px;
-
-}
-
-/* ===========================
-MISSION
-=========================== */
-
-#mission{
-
-background:#eef4ff;
-
-}
-
-#mission p{
-
-max-width:900px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:18px;
-
-}
-
-/* ===========================
-VISION
-=========================== */
-
-#vision{
-
-background:white;
-
-}
-
-#vision p{
-
-max-width:900px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:18px;
-
-}
-
-/* ===========================
-CORE VALUES
-=========================== */
-
-#values{
-
-background:#eef4ff;
-
-}
-
-/* ===========================
-SERVICES
-=========================== */
-
-#services{
-
-background:white;
-
-}
-
-/* ===========================
-INDUSTRIES
-=========================== */
-
-#industries{
-
-background:#eef4ff;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333333;
+    line-height: 1.8;
 }
-
-/* ===========================
-PRODUCT CATEGORIES
-=========================== */
 
-#categories{
-
-background:white;
-
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
-
-/* ===========================
-WHY CHOOSE US
-=========================== */
-
-#why-us{
-
-background:#eef4ff;
 
+/* HEADER & NAVIGATION */
+.header {
+    background: #0b3d91;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
 }
 
-/* ===========================
-PROCESS
-=========================== */
-
-#process{
-
-background:white;
-
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
 }
-
-#process .card{
-
-text-align:center;
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-#process h3{
-
-font-size:40px;
-
-color:#ff9800;
-
-margin-bottom:15px;
-
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 4px;
 }
 
-/* ===========================
-FOUNDER
-=========================== */
-
-#founder{
-
-background:#eef4ff;
-
-text-align:center;
-
+.header h1 {
+    font-size: 24px;
+    margin: 0;
 }
-
-#founder h3{
 
-margin-top:20px;
-
-font-size:30px;
-
-color:#0b3d91;
-
+.header p {
+    font-size: 13px;
+    color: #d1e0ff;
+    margin-top: 2px;
 }
-
-#founder h4{
-
-margin-top:10px;
 
-margin-bottom:20px;
-
-color:#777;
-
-font-weight:normal;
-
+nav {
+    display: flex;
+    gap: 18px;
 }
-
-#founder p{
-
-max-width:850px;
 
-margin:auto;
-
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
 }
-
-/* ===========================
-FAQ
-=========================== */
-
-#faq{
-
-background:white;
 
+nav a:hover {
+    color: #ffd54f;
 }
-
-#faq .card{
-
-margin-bottom:20px;}
-/* ===================================
-CONTACT SECTION
-=================================== */
-
-#contact{
-
-background:#eef4ff;
-
-text-align:center;
 
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("office.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 20px;
 }
 
-#contact p{
-
-font-size:18px;
-
-margin:12px 0;
-
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    line-height: 1.25;
 }
-
-#contact .btn{
-
-margin-top:25px;
 
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 19px;
 }
-
-/* ===================================
-FOOTER
-=================================== */
-
-footer{
-
-background:#0b3d91;
-
-color:#fff;
-
-padding:40px 20px;
 
-text-align:center;
-
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: #ff9800;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.20);
+    transition: all 0.3s ease;
 }
-
-footer p{
-
-margin:10px 0;
-
-font-size:16px;
 
+.btn:hover {
+    background: #e68900;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.25);
 }
 
-footer hr{
-
-margin:25px auto;
-
-width:120px;
-
-border:1px solid rgba(255,255,255,.3);
-
+/* SECTIONS & TITLES */
+section {
+    padding: 80px 0;
 }
-
-/* ===================================
-IMAGE EFFECT
-=================================== */
 
-.photo{
-
-transition:.4s;
-
-cursor:pointer;
-
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #0b3d91;
 }
-
-.photo:hover{
 
-transform:scale(1.03);
-
+/* GRID LAYOUT & CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
-
-/* ===================================
-BUTTON EFFECT
-=================================== */
 
-.btn{
-
-box-shadow:0 8px 20px rgba(0,0,0,.20);
-
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border-top: 5px solid #0b3d91;
+    /* Opacity and Transform are handled dynamically by script.js */
 }
-
-.btn:hover{
 
-box-shadow:0 12px 25px rgba(0,0,0,.25);
-
+.card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
 }
-
-/* ===================================
-SCROLL ANIMATION
-=================================== */
-
-.card{
-
-animation:fadeUp .8s ease;
 
+.card h3 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
+.card p {
+    color: #555555;
+    font-size: 16px;
 }
-
-to{
 
-opacity:1;
-
-transform:translateY(0);
-
+/* MEDIA & PHOTOS */
+.photo {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.20);
+    transition: transform 0.4s ease;
 }
 
+.photo:hover {
+    transform: scale(1.03);
 }
-
-/* ===================================
-MOBILE RESPONSIVE
-=================================== */
-
-@media(max-width:768px){
-
-.header{
 
-position:relative;
-
+/* SECTION BACKGROUNDS */
+#about, #vision, #services, #categories, #process, #faq {
+    background: #ffffff;
 }
-
-.logo-area{
 
-flex-direction:column;
-
-text-align:center;
-
+#about p, #mission p, #vision p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
 }
-
-.logo{
 
-width:70px;
-
-height:70px;
-
+#mission, #values, #industries, #why-us, #founder, #contact {
+    background: #eef4ff;
 }
-
-.header h1{
-
-font-size:28px;
 
+#process .card {
+    text-align: center;
 }
 
-.header p{
-
-font-size:15px;
-
+#process h3 {
+    font-size: 38px;
+    color: #ff9800;
+    margin-bottom: 12px;
 }
-
-nav{
-
-flex-direction:column;
-
-gap:10px;
 
-padding-bottom:20px;
-
+#founder {
+    text-align: center;
 }
-
-nav a{
 
-display:block;
-
-padding:10px;
-
+#founder .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-
-.hero{
 
-padding:80px 20px;
-
+#founder h3 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #0b3d91;
 }
-
-.hero h2{
 
-font-size:32px;
-
-line-height:1.3;
-
+#founder h4 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #666666;
+    font-weight: normal;
 }
-
-.hero p{
 
-font-size:17px;
-
+#founder p {
+    max-width: 850px;
+    margin: auto;
 }
-
-section{
 
-padding:60px 20px;
-
+#faq .card {
+    margin-bottom: 20px;
 }
-
-section h2{
 
-font-size:30px;
-
+#contact {
+    text-align: center;
 }
-
-.grid{
 
-grid-template-columns:1fr;
-
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
 }
-
-.card{
-
-padding:22px;
 
+/* FOOTER */
+footer {
+    background: #0b3d91;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.photo{
-
-width:100%;
-
+footer p {
+    margin: 8px 0;
+    font-size: 15px;
 }
-
-.btn{
-
-padding:14px 28px;
-
-font-size:16px;
 
+footer hr {
+    margin: 25px auto;
+    width: 120px;
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,.3);
 }
 
-#contact p{
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 
-font-size:16px;
+    .logo-area {
+        flex-direction: column;
+        gap: 8px;
+    }
 
-}
-
-footer{
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 
-padding:30px 15px;
+    .hero {
+        padding: 80px 20px;
+    }
 
-}
+    .hero h2 {
+        font-size: 30px;
+    }
 
-footer p{
+    .hero p {
+        font-size: 16px;
+    }
 
-font-size:14px;
+    section {
+        padding: 50px 0;
+    }
 
-}
+    section h2 {
+        font-size: 28px;
+    }
 
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-/* ===================================
-END
-HAMJA GLOBAL LLC
-Version 2.0
-=================================== */
