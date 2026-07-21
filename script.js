@@ -1,36 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Smooth scrolling
+    // 1. Smooth scrolling with safety checks
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
-            e.preventDefault();
+            const targetId = this.getAttribute("href");
 
-            document.querySelector(this.getAttribute("href"))
-                .scrollIntoView({
-                    behavior: "smooth"
-                });
-        });
-    });
-
-    // Fade-in animation
-    const cards = document.querySelectorAll(".card");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+            if (targetId && targetId !== "#") {
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });
 
+    // 2. Scroll Animation using IntersectionObserver
+    const cards = document.querySelectorAll(".card");
+
+    const observerOptions = {
+        threshold: 0.15 // Triggers when 15% of the card is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target); // Stops observing once revealed
+            }
+        });
+    }, observerOptions);
+
     cards.forEach(card => {
         card.style.opacity = "0";
         card.style.transform = "translateY(30px)";
-        card.style.transition = "all .6s ease";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
         observer.observe(card);
     });
 
-    console.log("HAMJA GLOBAL LLC Website Loaded");
+    console.log("HAMJA GLOBAL LLC Website Loaded Successfully!");
 
 });
